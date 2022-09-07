@@ -15,4 +15,4 @@ var x;
 
 //ik this stuff
 //global scope
-//inside can se out, outside cant see in.    --hidden--
+//inside can se out, outside cant see in.    --hidden--   hoisting
