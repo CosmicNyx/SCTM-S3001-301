@@ -1,26 +1,17 @@
 
 
-// -----------reading file-------
-
 const fs = require('fs');
-let data = fs.readFileSync('labs/testtext1.txt');
+let data = fs.readFileSync('labs/testtext1.txt'); //PUT FILE NAME HERE
 
-// console.log(typeof data)
-// console.log("--------");
-//converting file to string
 
 data = String(data);
 
-// console.log(data)
-// console.log("--------");
-// console.log(typeof data)
 
 
-//----Function
-
+//Function
 var x = 0;
-var counter = 0;
-var word
+var index = 0;
+var longWord
 
 function findLongestWord(string) {
 
@@ -30,8 +21,8 @@ function findLongestWord(string) {
 
         if (splitWord[i].length > x) {
             x = splitWord[i].length;
-            counter = i;
-            word = splitWord[i];
+            index = i;
+            longWord = splitWord[i];
         }
     }
     return x;
@@ -40,5 +31,5 @@ function findLongestWord(string) {
 
 findLongestWord(data);
 
-console.log("The longest word here is " + word)
-console.log("The index of this word in the array is " + counter)
+console.log("The longest word here is " + longWord)
+console.log("The index of this word in the array is " + index)

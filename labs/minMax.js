@@ -1,19 +1,21 @@
 const fs = require('fs');
-let data = fs.readFileSync('labs/testnumbers1.csv');
+let data = fs.readFileSync('labs/num.csv'); //PUT FILE NAME HERE
 data = String(data);
 
 //convert csv list to array of strings
 let dataarray = data.split(',');
 //convert it to a number array
-for(let i = 0; i<dataarray.length; i++){
+for(let i = 0; i < dataarray.length; i++){
     dataarray[i] = Number(dataarray[i]);
 }
 
-// console.log(dataarray.length)
+
 
 //var
-var largest, smallest = dataarray[0];
+var largest = dataarray[0];
 var largeIndex = 0;
+
+var smallest = dataarray[0];
 var smallIndex = 0;
 
 
