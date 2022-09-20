@@ -1,3 +1,9 @@
+/*
+Ushna Khalid
+SCTM-S3001-301
+*/
+
+
 const fs = require('fs');
 let data = fs.readFileSync('labs/num.csv'); //PUT FILE NAME HERE
 data = String(data);
@@ -9,6 +15,10 @@ for(let i = 0; i < dataarray.length; i++){
     dataarray[i] = Number(dataarray[i]);
 }
 
+/*
+-------------------------------------------
+*/
+
 
 
 //var
@@ -17,7 +27,6 @@ var largeIndex = 0;
 
 var smallest = dataarray[0];
 var smallIndex = 0;
-
 
 
 //Largest num

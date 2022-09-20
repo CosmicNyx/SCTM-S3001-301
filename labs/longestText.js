@@ -1,9 +1,10 @@
-
+/*
+Ushna Khalid
+SCTM-S3001-301
+*/
 
 const fs = require('fs');
 let data = fs.readFileSync('labs/testtext1.txt'); //PUT FILE NAME HERE
-
-
 data = String(data);
 
 
