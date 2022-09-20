@@ -27,7 +27,6 @@ function findLongestWord(string) {
         }
     }
     return x;
-    
 }
 
 findLongestWord(data);

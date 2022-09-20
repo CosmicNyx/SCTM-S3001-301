@@ -5,7 +5,7 @@ SCTM-S3001-301
 
 
 const fs = require('fs');
-let data = fs.readFileSync('labs/num.csv'); //PUT FILE NAME HERE
+let data = fs.readFileSync('labs/testnumbers1.csv'); //PUT FILE NAME HERE
 data = String(data);
 
 //convert csv list to array of strings
@@ -20,32 +20,29 @@ for(let i = 0; i < dataarray.length; i++){
 */
 
 
-
 //var
 var largest = dataarray[0];
-var largeIndex = 0;
-
 var smallest = dataarray[0];
-var smallIndex = 0;
+var index = 0;
 
 
 //Largest num
 for (var i = 0; i < dataarray.length; i++) {
     if (largest < dataarray[i] ) {
         largest = dataarray[i];
-        largeIndex = i;
+        index = i;
     }
 }
-console.log("Largest " + largest);
-console.log("index " + largeIndex);
+console.log("largest number: " + largest);
+console.log("index: " + index);
 
 
 //smallest num
 for (var i = 0; i < dataarray.length; i++) {
     if (smallest > dataarray[i] ) {
         smallest = dataarray[i];
-        smallIndex = i;
+        index = i;
     }
 }
-console.log("Smallest " + smallest);
-console.log("index " + smallIndex);
+console.log("smallest number: " + smallest);
+console.log("index " + index);
