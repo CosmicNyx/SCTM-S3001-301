@@ -31,7 +31,7 @@ x.forEach(console.log);
 console.log("--------");
 // read file sync
 const fs = require('fs');
-let data = fs.readFileSync('test.csv');
+let data = fs.readFileSync('class/test.csv');
 //hex
 console.log(data)
 //hex to string
