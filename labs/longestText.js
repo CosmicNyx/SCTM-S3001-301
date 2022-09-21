@@ -14,22 +14,24 @@ var x = 0;
 var index = 0;
 var longWord
 
-function findLongestWord(string) {
+console.log(data[0])
 
-    var splitWord = string.split(' ');
 
-    for (var i = 0; i < splitWord.length; i++) {
 
-        if (splitWord[i].length > x) {
-            x = splitWord[i].length;
-            index = i;
-            longWord = splitWord[i];
-        }
+var splitWord = data.split(' ');
+
+console.log(splitWord[0])
+
+for (var i = 0; i < splitWord.length; i++) {
+
+    if (splitWord[i].length > x) {
+        x = splitWord[i].length;
+        index = i;
+        longWord = splitWord[i];
     }
-    return x;
 }
 
-findLongestWord(data);
+
 
 console.log("The longest word here is " + longWord)
 console.log("The index of this word in the array is " + index)

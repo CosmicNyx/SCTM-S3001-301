@@ -1,7 +1,9 @@
 //coercion??
 //copares ojects by ref.. not value
 
-//STACKS down
+//-----------------STACKS down
+
+// ----------SEARCH
 
 /*
 = is used for assigning values to a variable, 
@@ -97,3 +99,37 @@ console.table(myStack)
 console.log('pop')
 console.log(myStack.pop())
 console.table(myStack)
+
+console.log('--------------\nsearch\n--------------')
+
+/**
+ * 
+ * 
+ * -----  SEARCH -------
+ * 
+ * 
+*/
+
+
+
+let data = [{}, 10, 'cat', true, 'doggo', null];
+
+
+//linear complexity O(n^2)
+for (let i=0;i < data.length; i++){
+    if (data[i]==='cat'){
+        console.log("found cat at " + i)
+        break;
+    }
+}
+
+
+//??
+//exponential complexity O(n^2)
+for (let i=0; i < data.length; i++){
+    for (let j = i;j < data.length; j++){
+        if (data[i]===data[j] && data[i]==='cat'){
+            console.log(data[i])
+        }
+    }
+}
