@@ -1,6 +1,8 @@
 //coercion??
 //copares ojects by ref.. not value
 
+//STACKS down
+
 /*
 = is used for assigning values to a variable, 
 == is used for comparing two variables, but it
@@ -66,3 +68,32 @@ console.log(false == '')
 
 console.log('---------')
 console.log(true == Boolean("true"))
+
+
+/**
+ * 
+ * ---------STACKS---------
+ * 
+ */
+
+//one thing on top of another
+//put smth on top.. take smth of the top
+
+var myStack = [];
+
+for(let i=0; i<10; i++){
+    myStack.push(i);
+}
+
+
+console.log(myStack)
+console.table(myStack)
+
+console.log('--------------')
+
+console.log('push')
+console.log(myStack.push(8))
+console.table(myStack)
+console.log('pop')
+console.log(myStack.pop())
+console.table(myStack)
