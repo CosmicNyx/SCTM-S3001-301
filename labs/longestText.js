@@ -23,7 +23,6 @@ var splitWord = data.split(' ');
 console.log(splitWord[0])
 
 for (var i = 0; i < splitWord.length; i++) {
-
     if (splitWord[i].length > x) {
         x = splitWord[i].length;
         index = i;

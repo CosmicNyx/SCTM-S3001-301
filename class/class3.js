@@ -127,7 +127,7 @@ for (let i=0;i < data.length; i++){
 //??
 //exponential complexity O(n^2)
 for (let i=0; i < data.length; i++){
-    for (let j = i;j < data.length; j++){
+    for (let j = 0;j < data.length; j++){
         if (data[i]===data[j] && data[i]==='cat'){
             console.log(data[i])
         }
