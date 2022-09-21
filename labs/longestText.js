@@ -18,15 +18,15 @@ console.log(data[0])
 
 
 
-var splitWord = data.split(' ');
+var dataarray = data.split(' ');
 
-console.log(splitWord[0])
+console.log(dataarray[0])
 
-for (var i = 0; i < splitWord.length; i++) {
-    if (splitWord[i].length > x) {
-        x = splitWord[i].length;
+for (var i = 0; i < dataarray.length; i++) {
+    if (dataarray[i].length > x) {
+        x = dataarray[i].length;
         index = i;
-        longWord = splitWord[i];
+        longWord = dataarray[i];
     }
 }
 
