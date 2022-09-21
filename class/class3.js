@@ -115,7 +115,7 @@ console.log('--------------\nsearch\n--------------')
 let data = [{}, 10, 'cat', true, 'doggo', null];
 
 
-//linear complexity O(n^2)
+//linear complexity O(n2)
 for (let i=0;i < data.length; i++){
     if (data[i]==='cat'){
         console.log("found cat at " + i)
