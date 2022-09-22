@@ -12,10 +12,10 @@ data = String(data);
 */
 
 
-//Function
+//var
 var x = 0;
 var index = 0;
-var longWord
+var longWord;
 
 console.log(data[0])
 
