@@ -7,6 +7,9 @@ const fs = require('fs');
 let data = fs.readFileSync('labs/testtext1.txt'); //PUT FILE NAME HERE
 data = String(data);
 
+/*
+-------------------------------------------
+*/
 
 
 //Function
@@ -15,7 +18,6 @@ var index = 0;
 var longWord
 
 console.log(data[0])
-
 
 
 var dataarray = data.split(' ');

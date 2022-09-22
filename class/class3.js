@@ -133,3 +133,20 @@ for (let i=0; i < data.length; i++){
         }
     }
 }
+
+//
+//O(1)
+
+console.log("---------------");
+
+///////
+data.sort(function(a,b){
+    if(a === "cat"){
+        return -1;
+    }else{
+        return 0;
+    }
+})
+
+console.log (data[0]);
+console.log(data);
