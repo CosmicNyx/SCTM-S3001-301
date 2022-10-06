@@ -5,7 +5,7 @@ SCTM-S3001-301
 
 
 const fs = require('fs');
-let data = fs.readFileSync('labs/testnumbers1.csv'); //PUT FILE NAME HERE
+let data = fs.readFileSync('labs/lab1/testnumbers1.csv'); //PUT FILE NAME HERE
 data = String(data);
 
 //convert csv list to array of strings
