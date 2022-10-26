@@ -47,7 +47,7 @@ var secondNum = dataarray[1];
 var numDif = (secondNum - firstNum) + 1
 var sum = (firstNum + secondNum) * (numDif / 2);
 
-console.log(sum())
+console.log(sum)
 
 
 
