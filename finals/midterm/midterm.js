@@ -1,11 +1,9 @@
 //array vars
 var inputs = [];
 var newArr = [];
-var t = 0;
 var same = 0
 var sameWord = [];
 var noRepeats = [];
-
 var start = 0;
 
 function alphaOnly() {
@@ -19,7 +17,7 @@ function alphaOnly() {
         main();
         document.getElementById("InputBox").value = "";
     } else {
-        console.log("no")
+        // console.log("no")
         clear()
         // document.getElementById("InputBox").value = "";
     }
@@ -48,10 +46,9 @@ function main() {
 
     if ((FormatInput.includes("roll"))) {
         inputs.push(TextBox_val);
-        t = inputs.length - 2;
         clean();
         //roeason it snot working cuase it needs trim.. make into a func???
-        if (inputs[t] == ("rick")) {
+        if (inputs[inputs.length - 2] == ("rick")) {
             window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley", "_self");
         }
         //else {
@@ -74,7 +71,6 @@ function main() {
     } else {
 
         inputs.push(TextBox_val);
-
         // console.log("inputs " + inputs)
         clean();
     }
