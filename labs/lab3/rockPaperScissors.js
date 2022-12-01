@@ -8,33 +8,33 @@ let result;
 choiceBtn.forEach(button => button.addEventListener("click", () => {
     player = button.textContent;
     compTurn();
+    console.log("You chose: " + player + "\nComputer chose: " + comp)
     console.log(check())
+    console.log("-----------------------")
 }));
 
 function compTurn() {
-
     const randNum = Math.floor(Math.random() * 3) + 1;
     if (randNum == 1) {
-        computer = "Rock";
+        comp = "Rock";
     } else if (randNum == 2) {
-        computer = "Paper";
+        comp = "Paper";
     } else if (randNum == 3) {
-        computer = "Scissors";
+        comp = "Scissors";
     }
 }
 
 function check() {
-    if (player == computer) {
+    if (player == comp) {
         return "Draw!";
     }
-    else if (computer == "Rock") {
+    else if (comp == "Rock") {
         return (player == "Paper") ? "You Win!" : "You Lose!"
     }
-    else if (computer == "Paper") {
+    else if (comp == "Paper") {
         return (player == "Scissors") ? "You Win!" : "You Lose!"
     }
-    else if (computer == "Scissors") {
+    else if (comp == "Scissors") {
         return (player == "Rock") ? "You Win!" : "You Lose!"
     }
 }
-
