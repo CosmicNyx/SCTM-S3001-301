@@ -67,6 +67,7 @@ function main() {
     //clears the input array
     if ((FormatInput.includes("clear"))) {
         clear();
+        localStorage.clear();
     }
 
     

@@ -51,9 +51,6 @@ function check() {
         alert("You did not write down any of the correct words")
     }
 
-    localStorage.setItem("Words", noRepeats.length);
-    console.log(localStorage.getItem("Words"))
-
 }
 
 
@@ -93,4 +90,21 @@ function repeat(){
     }
     console.log(newArr)
     console.log(noRepeats)
+    storage();
+}
+
+function storage(){
+    console.log(localStorage.getItem("Words"));
+    console.log("---------");
+    console.log(Number(localStorage.getItem("Words")));
+    console.log(noRepeats.length);
+    console.log(Number(localStorage.getItem("Words")) + noRepeats.length);
+    let x = Number(localStorage.getItem("Words")) + noRepeats.length;
+    localStorage.setItem("Words", x);
+
+    // let x = localStorage.getItem("Words") + noRepeats.length;
+
+    // localStorage.setItem("Words", noRepeats.length);
+    // console.log("local storage actual: "+ localStorage.getItem("Words"))
+    // console.log("local storage: "+x)
 }
