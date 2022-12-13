@@ -29,14 +29,25 @@ function clearArrays() {
 
 //checking and showing
 function check() {
-    if (start == 1) {
-        alert("Was that fun? Well now how about you rant again and see if you write down certain common words. If you do, you'll get a prize!")
+
+    if (totalWords >= 100){
+        alert("Oh wow youve written over 100 words")
+    }
+
+    if (start == 1 && localStorage.getItem("Start")!= "true") {
+        alert("Was that fun? Well now how about you rant again and we'll see how many words you an write down")
+        alert("If you write a few specific words in your rants, you might win a treat")
+        alert("We'll let you know how many words you got so you can catch on")
+        localStorage.setItem("Start", "true");
+    }else if (start == 1 && localStorage.getItem("Start")== "true"){
+        alert("I see you've been here before")
+        alert("You know what to do")
     }
     
     if(start == 5){
         alert("ok im tired")
         alert("goodbye")
-        window.close();
+        //window.close();
     }
     else if (same >= 1 && same < 9) {
         alert("You wrote the correct words " + same + " time(s).... You need to guess the 10 or more correct words")
@@ -93,14 +104,18 @@ function repeat(){
     storage();
 }
 
+
+//LOCAL STORAGE
+//keeps track of how many words youve written in total
 function storage(){
-    console.log(localStorage.getItem("Words"));
-    console.log("---------");
-    console.log(Number(localStorage.getItem("Words")));
-    console.log(noRepeats.length);
-    console.log(Number(localStorage.getItem("Words")) + noRepeats.length);
-    let x = Number(localStorage.getItem("Words")) + noRepeats.length;
-    localStorage.setItem("Words", x);
+    // console.log(localStorage.getItem("Words"));
+    // console.log("---------");
+    // console.log(Number(localStorage.getItem("Words")));
+    // console.log(noRepeats.length);
+    totalWords = Number(localStorage.getItem("Words")) + noRepeats.length;
+    console.log(totalWords);
+    //let x = Number(localStorage.getItem("Words")) + noRepeats.length;
+    localStorage.setItem("Words", totalWords);
 
     // let x = localStorage.getItem("Words") + noRepeats.length;
 

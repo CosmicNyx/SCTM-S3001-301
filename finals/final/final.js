@@ -6,6 +6,8 @@ var same = 0
 // var sameWord = [];
 var noRepeats = [];
 var start = 0;
+let totalWords;
+
 
 
 function alphaOnly() {
@@ -64,16 +66,35 @@ function main() {
         // }
     }
 
-    //clears the input array
+    //clears the input array////USED FOR TESTING
     if ((FormatInput.includes("clear"))) {
-        clear();
         localStorage.clear();
+        clear();
+        removeBlanks()
+        sort();
+        clearArrays();
+
     }
 
-    
+    //COLORS
     if ((FormatInput.includes("blue"))) {
         document.body.style.backgroundColor = "#89CFF0";
+    } else if ((FormatInput.includes("red"))) {
+        document.body.style.backgroundColor = "#B03D24";
+    } else if ((FormatInput.includes("green"))) {
+        document.body.style.backgroundColor = "#27AE60";
+    } else if ((FormatInput.includes("yellow"))) {
+        document.body.style.backgroundColor = "#F4D03F";
+    } else if ((FormatInput.includes("white"))) {
+        document.body.style.backgroundColor = "#ECF0F1";
+    } else if ((FormatInput.includes("purple"))) {
+        document.body.style.backgroundColor = "#9B59B6";
+    } else if ((FormatInput.includes("black"))) {
+        document.body.style.backgroundColor = "#1b1e1e";
+    } else if ((FormatInput.includes("grey"))) {
+        document.body.style.backgroundColor = "#616A6B";
     }
+
 
     //if stament that tells if user is done and wants results
     if ((FormatInput.includes("done"))) {
